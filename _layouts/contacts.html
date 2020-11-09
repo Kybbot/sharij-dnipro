@@ -1,0 +1,27 @@
+{% include /head-full.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-xl-6">
+				<div id="map" class="map"></div>
+			</div>
+			<div class="col-xl-6">
+				<div class="contacts">
+					<div class="contacts-title">Контакты</div>
+					<div class="contacts-street">проспект Олександра Поля, 54</div>
+					<div class="contacts-number">+380 68 25 168 35</div>
+					<div class="contacts-email">sharij-dnipro@gmail.com</div>
+					<div class="contacts-time">Понедельник - Пятница: 8.00 - 16.00</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+
+<script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<script src="/assets/js/map.js"></script>
+
+{% include /footer.html %}

@@ -1,0 +1,28 @@
+{% include /head.html %}
+
+{% include /header.html %}
+
+<main>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-xl-12 d-flex justify-content-around align-items-center flex-wrap">
+
+				{% for post in site.categories.activity %}
+					<div class="activity">
+						<div class="activity-info">
+							<div class="activity-info-date"> {{ post.date | date: "%d.%m.%Y"}}</div>
+							<p class="activity-info-name"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+							<div class="activity-info-location">{{ post.location }}</div>
+						</div>
+						<div class="activity-img">
+							<img src="{{ site.baseurl }}{{ post.img }}" alt="{{ post.title }}">
+						</div>
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+	</div>
+</main>
+
+{% include /footer.html %}
